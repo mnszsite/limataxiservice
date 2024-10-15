@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <title>LiMA Hire - Taxi & Hire Car Services</title>
+</head>
+<body>
+    <header>
+        <div class="logo">LiMA Taxi Service</div>
+        <nav>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Your Reliable TAxi Service</h1>
+            <p>Experience convenience with LiMA TAxi Services.</p>
+            <a href="#contact" class="btn">Book Now</a>
+        </div>
+    </section>
+
+    <h2 style="text-align: center; font-size: xx-large;">Our Services</h2>
+    <section id="services" class="services">
+        
+        <div class="service-card">
+            <img src="images/1000008953.jpg" alt="Taxi Services">
+            <h3>Taxi Services</h3>
+            <p>Available 24/7 for immediate or pre-booked rides. Clean vehicles and experienced drivers ensure a safe journey.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/IMG-20241007-WA0000.jpg" alt="Hire Car Service">
+            <h3>Hire Car Service</h3>
+            <p>Choose from a selection of SUVs for business trips, special occasions, or getaways. Book with or without a driver.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/IMG-20241007-WA0001.jpg" alt="Local Rides">
+            <h3>Local Rides</h3>
+            <p>Explore the city with our comfortable local rides, perfect for both short and long distances.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/1000008950 (2).jpg" alt="Airport Transfers">
+            <h3>Airport Transfers</h3>
+            <p>Reliable pickups and drop-offs at the airport, ensuring you never miss a flight.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>What Makes Us Different</h2>
+        <div class="about-container">
+            <div class="about-slide active">
+                <div class="about-item">
+                    <h3>Safety First</h3>
+                    <p>All vehicles undergo regular maintenance and inspection, with trained and licensed drivers.</p>
+                </div>
+                <div class="about-item">
+                    <h3>Customer Focus</h3>
+                    <p>We prioritize a positive experience for every customer with friendly and professional service.</p>
+                </div>
+            </div>
+            <div class="about-slide">
+                <div class="about-item">
+                    <h3>Competitive Rates</h3>
+                    <p>Enjoy great value with our competitive rates for taxi and hire car services.</p>
+                </div>
+                <div class="about-item">
+                    <h3>Flexibility</h3>
+                    <p>Whether a quick ride or a multi-day rental, we have solutions to fit your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- testimonials -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-slide active">
+                <blockquote>
+                    <i class="fas fa-user-circle user-icon"></i> <!-- Font Awesome icon -->
+                    <p>"LiMA Hire provided an excellent service! The driver was punctual and very professional. Highly recommend!"</p>
+                    <h3>- John Doe</h3>
+                </blockquote>
+            </div>
+            <div class="testimonial-slide">
+                <blockquote>
+                    <i class="fas fa-user-circle user-icon"></i> <!-- Font Awesome icon -->
+                    <p>"I booked a ride for my family, and it was smooth and comfortable. Will definitely use them again!"</p>
+                    <h3>- Jane Smith</h3>
+                </blockquote>
+            </div>
+            <div class="testimonial-slide">
+                <blockquote>
+                    <i class="fas fa-user-circle user-icon"></i> <!-- Font Awesome icon -->
+                    <p>"Great service and very friendly drivers. Made my trip much easier!"</p>
+                    <h3>- Sarah Johnson</h3>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p style="text-align: center;">Experience the difference with LiMA Hire for all your transportation needs. Contact us today to learn more or to book your ride!</p>
+        <form id="booking-form" onsubmit="handleFormSubmit(event)">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="phone" placeholder="Phone Number" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="pickup" placeholder="Pickup Location" required>
+            <input type="text" name="dropoff" placeholder="Drop-off Location" required>
+            <input type="number" name="passengers" placeholder="Number of Passengers" min="1" required>
+
+            <label for="pickup-time">Pickup Time:</label>
+            <input type="time" name="pickup-time" id="pickup-time" required>
+            <label for="contact-method">Choose a contact method:</label>
+            <select name="contact-method" id="contact-method" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="email">Email</option>
+                <option value="whatsapp">WhatsApp</option>
+            </select>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 LiMA Hire</p>
+            <p>Email: lima@gmail.com</p>
+            <p>Phone: (675) 778707911</p>
+            <div class="social-links">
+                <a href="https://facebook.com/mnszsite" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://tiktok.com/@mnszsite" class="social-icon"><i class="fab fa-tiktok"></i></a> <!-- Added TikTok -->
+                <a href="https://instagram.com/mnszsite" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>Designed By: <a href="https://mnszsite.blogspot.com" target="_blank" class="designer-link">MnszSITE.aw</a></p>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
