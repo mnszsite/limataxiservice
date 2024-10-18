@@ -86,7 +86,7 @@ nav {
 
 /* hero section */
 .hero {
-    background-image: url('/images/IMG-20241007-WA0006.jpg'); /* Replace with a real image URL */
+    background-image: url('images/IMG-20241007-WA0006.jpg'); /* Replace with a real image URL */
     background-size: cover;
     background-position: center;
     height: 400px;
