@@ -86,7 +86,7 @@ nav {
 
 /* hero section */
 .hero {
-    background-image: url('images/IMG-20241007-WA0006.jpg'); /* Replace with a real image URL */
+    background-image: url('/images/IMG-20241007-WA0006.jpg'); /* Replace with a real image URL */
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -257,48 +257,78 @@ button:hover {
     opacity: 1;
 }
 
+
 /* footer */
 footer {
-    background-color: #333;
+    background-color: hsl(210, 15%, 20%); /* Darker shade for modern look */
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 0; /* Increased padding for a more spacious feel */
+    font-family: 'Arial', sans-serif; /* Modern font */
 }
 
 .footer-content {
-    max-width: 600px; /* Limit the width for better readability */
+    display: flex;
+    flex-direction: column;
+    max-width: 700px; /* Increased width for better readability */
     margin: auto; /* Center the content */
-    padding: 0 20px; /* Padding for smaller screens */
+    padding: 0 5px; /* Padding for smaller screens */
 }
 
-.footer-content p {
-    margin: 5px 0; /* Reduced margin for tighter spacing */
+/* Center all paragraphs and links */
+.footer-content p,
+.footer-content a {
+    
+    margin: 5px 0; /* Reduced margin for closer spacing */
+    font-size: 1.1em; /* Slightly larger base font size */
+    line-height: 1.5; /* Better readability */
+    color: white; /* Ensure link color is consistent */
+    text-decoration: none; /* Remove underline for links */
+}
+
+.footer-content a:hover {
+    color: #ffcc00; /* Bright hover color */
 }
 
 /* Social Links */
 .social-links {
-    margin-top: 10px; /* Spacing above social links */
+    margin-top: 10px; /* Reduced spacing above social links */
     display: flex; /* Use flexbox for alignment */
     justify-content: center; /* Center the links */
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .social-links a {
-    margin: 0 8px; /* Reduced margin for links */
-    color: white;
-    text-decoration: none;
-    font-size: 1.1em; /* Slightly larger font for visibility */
-    transition: color 0.3s; /* Smooth color transition */
+    margin: 0 10px; /* Adjusted margin for links */
+    font-size: 1.5em; /* Increased font size for visibility */
+    transition: color 0.3s, transform 0.3s; /* Smooth transitions */
 }
 
 .social-links a:hover {
-    color: #ffcc00; /* Change color on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
 }
 
+.social-links i {
+    font-size: 1.5em; /* Consistent icon size */
+}
+
+/* Designer link */
 .designer-link {
     color: rgb(9, 248, 25);
-    text-decoration: none;
+    font-weight: bold; /* Bold for emphasis */
+    margin-top: 10px 0; /* Added margin for spacing from previous elements */
 }
+
+.designer-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+
+
+
+
+
 
 .about {
     position: relative;
