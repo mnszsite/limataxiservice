@@ -69,7 +69,7 @@ function handleFormSubmit(event) {
 
     if (contactMethod === 'email') {
         const subject = encodeURIComponent('Taxi Booking Request');
-        const recipientEmail = 'limataxiservice24@@gmail.com'; 
+        const recipientEmail = 'limataxiservice24@gmail.com'; 
         const mailtoLink = `mailto:${recipientEmail}?subject=${subject}&body=${encodeURIComponent(messageBody)}`;
         window.location.href = mailtoLink;
     } else if (contactMethod === 'whatsapp') {
