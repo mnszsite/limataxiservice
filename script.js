@@ -69,7 +69,7 @@ function handleFormSubmit(event) {
 
     if (contactMethod === 'email') {
         const subject = encodeURIComponent('Taxi Booking Request');
-        const recipientEmail = 'mnszsite.aw@gmail.com'; 
+        const recipientEmail = 'limataxiservice24@@gmail.com'; 
         const mailtoLink = `mailto:${recipientEmail}?subject=${subject}&body=${encodeURIComponent(messageBody)}`;
         window.location.href = mailtoLink;
     } else if (contactMethod === 'whatsapp') {
@@ -106,7 +106,7 @@ function changeSlide() {
 }
 
 // Auto-slide every 5 seconds
-setInterval(changeSlide, 5000);
+setInterval(changeSlide, 20000);
 
 
 
@@ -136,10 +136,3 @@ function changeAboutSlide() {
 
 // Auto-slide every 5 seconds
 setInterval(changeAboutSlide, 5000);
-
-
-
-
-
-
-
